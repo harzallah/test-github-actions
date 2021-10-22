@@ -13,6 +13,7 @@ echo "Cloning destination git repository"
 git clone https://${GITHUB_TOKEN}@github.com/Talend/talend-cloud-build.git .
 git checkout -b "$GITHUB_HEAD_REF"
 
+ssh git@github.com
 
 yq e ".tcdc.infra.aws = $GITHUB_SHA" manifests/main.yml
 echo "Adding git commit"
