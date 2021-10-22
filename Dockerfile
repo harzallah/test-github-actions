@@ -5,7 +5,7 @@ RUN apk update && \
     apk add build-base && \
     apk add git && \
     apk add yq && \
-    apk add ssh && \
+    apk add openssh-client && \
     git clone https://github.com/cli/cli.git gh-cli && \
     cd gh-cli && \
     make && \
