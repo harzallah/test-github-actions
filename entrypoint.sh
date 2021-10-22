@@ -10,7 +10,7 @@ git config --global user.name "devops_enablement"
 
 echo "Cloning destination git repository"
 # git clone https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/Talend/talend-cloud-build.git .
-git clone https://github.com/Talend/talend-cloud-build.git .
+git clone https://${GITHUB_TOKEN}@github.com/Talend/talend-cloud-build.git .
 git checkout -b "$GITHUB_HEAD_REF"
 
 
